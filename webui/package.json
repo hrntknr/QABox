@@ -1,0 +1,32 @@
+{
+  "name": "qabox-webui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "test": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/preset-react": "^7.0.0-beta.49",
+    "babel-loader": "^8.0.0-beta.3",
+    "css-loader": "^0.28.11",
+    "del": "^3.0.0",
+    "file-loader": "^1.1.11",
+    "gulp": "^3.9.1",
+    "node-sass": "^4.9.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^4.2.2",
+    "style-loader": "^0.21.0",
+    "web3": "^1.0.0-beta.34",
+    "webpack": "^4.9.1",
+    "webpack-stream": "^4.0.3"
+  }
+}

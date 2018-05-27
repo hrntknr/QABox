@@ -1,0 +1,65 @@
+.main {
+  max-width: 920px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.post {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #f7f7f7;
+  border: none;
+  border-left: solid 6px #ff7c5c;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  margin-bottom: 1rem;
+}
+
+.question > pre,
+.answer > pre{
+  font-size: 1.2rem;
+}
+
+.answerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answerForm > textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #f7f7f7;
+  border: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  margin-bottom: 1rem;
+}
+
+.answerForm > textarea:focus {
+  outline: none;
+}
+
+
+.answerForm > button {
+  width: 90%;
+  max-width: 100px;
+  font-size: 1rem;
+
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #f7f7f7;
+  color: #ff7c5c;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
+.answerForm > button:active {
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+  transform: translateY(2px);
+}
+
+.answerForm > button:focus {
+  outline: none;
+}

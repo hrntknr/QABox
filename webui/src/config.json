@@ -1,0 +1,178 @@
+{
+  "contractAddr": {
+    "3": "0xacee5a777af161ae9e3d465becc0eccd6838636d"
+  },
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "questions",
+      "outputs": [
+        {
+          "name": "question",
+          "type": "string"
+        },
+        {
+          "name": "answer",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "question",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "name": "postID",
+          "type": "uint256"
+        }
+      ],
+      "name": "QuestionPosted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "answer",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "name": "postID",
+          "type": "uint256"
+        }
+      ],
+      "name": "QuestionsAnswered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "question",
+          "type": "string"
+        }
+      ],
+      "name": "postQuestion",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getQuestionsLength",
+      "outputs": [
+        {
+          "name": "length",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "postID",
+          "type": "uint256"
+        }
+      ],
+      "name": "getQuestions",
+      "outputs": [
+        {
+          "name": "question",
+          "type": "string"
+        },
+        {
+          "name": "answer",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "postID",
+          "type": "uint256"
+        },
+        {
+          "name": "answer",
+          "type": "string"
+        }
+      ],
+      "name": "answerQuestion",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+}
